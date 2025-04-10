@@ -1,74 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aracpedia</title>
-  <link rel="stylesheet" href="landing.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aracpedia</title>
+    <link rel="stylesheet" href="landing.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" href="img/aranhaicon.png" type="image/x-icon" />
+  </head>
 
-  <header>
-    <nav>
-      <img class="logoimg" src="https://cdn-icons-png.flaticon.com/512/2911/2911452.png" alt="logo">
-      <h1 class="logo">Aracpedia</h1>
-      <ul class="menu">
-        <li><a href="#secao1">Home</a></li>
-        <li><a href="#secao2">Aranhas</a></li>
-        <li><a href="#secao3">Sobre Nós</a></li>
-        <li><a href="#secao4">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img class="logoimg" src="img/aranhaicon.png" alt="logo" />
+          <h1 class="logo">Aracpedia</h1>
+        </div>
+        <ul class="menu">
+          <li><a href="#secao1"><i data-feather="home"></i> Home</a></li>
+          <li><a href="#secao2"><i data-feather="aperture"></i> Aranhas</a></li>
+          <li><a href="#secao3"><i data-feather="info"></i> Sobre Nós</a></li>
+          <li><a href="#secao4"><i data-feather="mail"></i> Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="secao1" class="hero">
-      <h2>Bem-vindo à Aracpedia!</h2>
-      <p>Uma wiki especializada em aranhas. Aqui você encontrará a maior variedade de espécies e suas curiosidades!</p>
-    </section>
+    <main>
+      <section id="secao1" class="hero">
+        <h2><i data-feather="search"></i> Bem-vindo à Aracpedia!</h2>
+        <p>
+          Uma wiki especializada em aranhas. Aqui você encontrará a maior
+          variedade de espécies e suas curiosidades!
+        </p>
+      </section>
 
-    <section id="secao2" class="aranhas-section">
-      <h2>Aranhas em Destaque</h2>
-      <p>Algumas das aranhas mais interessantes do mundo aracnídeo:</p>
-      <div class="aranhas-grid">
-        <div class="card">
-          <img src="img/lycosa.png" alt="Lycosa">
-          <h3>Lycosa</h3>
-          <p>(Aranha-de-jardim)</p>
+      <section id="secao2" class="aranhas-section">
+        <h2><i data-feather="star"></i> Aranhas em Destaque</h2>
+        <p>Algumas das aranhas mais interessantes do mundo aracnídeo:</p>
+
+        <div class="aranhas-grid">
+          
+          <div class="card">
+            <img src="img/lycosa.png" alt="Lycosa" />
+            <h3><i data-feather="target"></i> Lycosa</h3>
+            <p>(Aranha-de-jardim)</p>
+            <div class="card-info">
+              Aranha caçadora terrestre, ativa à noite. Conhecida por sua
+              velocidade e visão aguçada.
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/salticidae.png" alt="Salticidae" />
+            <h3><i data-feather="activity"></i> Salticidae</h3>
+            <p>(Aranha-saltadora)</p>
+            <div class="card-info">
+              Pequena e curiosa, possui excelente visão e realiza saltos
+              impressionantes para capturar presas.
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/argyroneta.png" alt="Argyroneta" />
+            <h3><i data-feather="droplet"></i> Argyroneta</h3>
+            <p>(Aranha-de-água)</p>
+            <div class="card-info">
+              Vive em ambientes aquáticos e cria bolhas de ar para respirar
+              debaixo d'água. Muito rara.
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/theraphosa.png" alt="Theraphosa blondi" />
+            <h3><i data-feather="alert-triangle"></i> Theraphosa</h3>
+            <p>(Aranha-golias)</p>
+            <div class="card-info">
+              A maior aranha do mundo em massa corporal. Apesar do tamanho, é
+              geralmente tímida.
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/nephila.png" alt="Nephila" />
+            <h3><i data-feather="sun"></i> Nephila</h3>
+            <p>(Aranha-dourada)</p>
+            <div class="card-info">
+              Famosa por tecer teias com brilho dourado. Suas teias são
+              incrivelmente fortes e duráveis.
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="img/latrodectus.png" alt="Latrodectus" />
+            <h3><i data-feather="zap"></i> Latrodectus</h3>
+            <p>(Viúva-negra)</p>
+            <div class="card-info">
+              Aranha venenosa e reconhecida pelo ponto vermelho. Perigosa, mas
+              ataques são raros.
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <img src="img/salticidae.png" alt="Salticidae">
-          <h3>Salticidae</h3>
-          <p>(Aranha-saltadora)</p>
-        </div>
-        <div class="card">
-          <img src="img/argyroneta.png" alt="Argyroneta">
-          <h3>Argyroneta</h3>
-          <p>(Aranha-de-água)</p>
-        </div>
+      </section>
+
+      <section id="secao3" class="sobre">
+        <h2><i data-feather="users"></i> Sobre Nós</h2>
+        <p>
+          Somos apaixonados por aranhas e criamos esta plataforma para
+          compartilhar informações confiáveis e visuais sobre o mundo
+          aracnídeo.
+        </p>
+      </section>
+
+      <section id="secao4" class="contato">
+        <h2><i data-feather="message-circle"></i> Contato</h2>
+        <p>Fale com a gente:</p>
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+          <button type="submit"><i data-feather="send"></i> Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div style="margin-bottom: 10px;">
+        <a
+          href="https://github.com/VitorLimaSiqueira"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-feather="github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/low._fps?igsh=MXJ2dGhtbzIwcjVnbw=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-feather="instagram"></i>
+        </a>
+        <a
+          href="https://x.com/Noryoin_?t=JsgEtq1WWdptPyKTZZVoVw&s=09"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-feather="twitter"></i>
+        </a>
       </div>
-    </section>
+      <p>&copy; 2025 Aracpedia. Todos os direitos reservados.</p>
+    </footer>
 
-    <section id="secao3" class="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Somos apaixonados por aranhas e criamos esta plataforma para compartilhar informações confiáveis e visuais sobre o mundo aracnídeo.</p>
-    </section>
-
-    <section id="secao4" class="contato">
-      <h2>Contato</h2>
-      <p>Fale com a gente:</p>
-      <form>
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu e-mail" required />
-        <textarea rows="4" placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Aracpedia. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
